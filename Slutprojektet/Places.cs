@@ -40,46 +40,46 @@ class Places
         if (position == "standUp")
         {
             Console.WriteLine("Du står på en strand som sträcker sig så långt ögat kan se åt båda håll. Framför dig ser du havet möta horisonten. Bakom dig finns en djungel med höga träd.");
-        Console.WriteLine("Kolla i ryggsäcken, gå längs med stranden eller utforska djungeln (kolla, stranden, djungeln)");
+            Console.WriteLine("Kolla i ryggsäcken, gå längs med stranden eller utforska djungeln (kolla, stranden, djungeln)");
 
-        string choice = Console.ReadLine();
-        choice = choice.ToLower();
+            string choice = Console.ReadLine();
+            choice = choice.ToLower();
 
-        if (choice == "kolla")
-        {
-            // Bag();
-            position = "checkBag";
-        }
-        if (choice == "stranden")
-        {
-            position = "walkOnBeach";
-        }
-        if (choice == "djungeln")
-        {
-            position = "exploreDjungle";
-        }
+            if (choice == "kolla")
+            {
+                // Bag();
+                position = "checkBag";
+            }
+            if (choice == "stranden")
+            {
+                position = "walkOnBeach";
+            }
+            if (choice == "djungeln")
+            {
+                position = "exploreDjungle";
+            }
         }
         if (position == "walkOnBeach")
         {
-        Console.WriteLine("Du ser bara stranden framför dig, den verkar aldrig ta slut.Du fortsätter gå framåt.\nSplash\nEtt plötsligt ljud får dig att kolla dig omkring.");
-        Console.WriteLine("Kolla i ryggsäcken, undersök vart ljudet kom ifrån eler gå vidare (kolla, undersök, gå vidare)");
+            Console.WriteLine("Du ser bara stranden framför dig, den verkar aldrig ta slut.Du fortsätter gå framåt.\nSplash\nEtt plötsligt ljud får dig att kolla dig omkring.");
+            Console.WriteLine("Kolla i ryggsäcken, undersök vart ljudet kom ifrån eler gå vidare (kolla, undersök, gå vidare)");
 
-        string choice = Console.ReadLine();
-        choice = choice.ToLower();
+            string choice = Console.ReadLine();
+            choice = choice.ToLower();
 
-        if (choice == "kolla")
-        {
-            // Bag();
-            position = "checkBag";
-        }
-        if (choice == "undersök")
-        {
-            position = "exploreSound";
-        }
-        if (choice == "gå vidare")
-        {
-            position = "continueWalkOnBeach";
-        }
+            if (choice == "kolla")
+            {
+                // Bag();
+                position = "checkBag";
+            }
+            if (choice == "undersök")
+            {
+                position = "exploreSound";
+            }
+            if (choice == "gå vidare")
+            {
+                position = "continueWalkOnBeach";
+            }
         }
 
         
