@@ -83,7 +83,7 @@ while (position != "leave")
 
         while (playerHP > 0 && enemyHP > 0)
         {
-
+                
         }
 
         Fight();
