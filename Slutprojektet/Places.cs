@@ -136,7 +136,7 @@ class Places
         if (position == "pickUp")
         {
             Console.WriteLine("Det är en silvrig sten som är formad som en fyrklöver. Du lägger den i ryggsäcken och fortsätter vidare längs med stranden.");
-            // items.Add("Sten");
+            // items[2] = "Sten";
             position = "continueWalkOnBeach";
         }
 

@@ -39,7 +39,7 @@ while (position != "leave")
 -----------------------------------------------------------------------------*/
     if (position == "exploreSound")
     {
-        position = Places.BeachPlace(position);
+        position = Places.WaterPlace(position);
     }
 /* ----------------------------------------------------------------------------
     POSITION: DJUNGLE
@@ -48,25 +48,24 @@ while (position != "leave")
     {
         position = Places.DjunglePlace(position);
     }
-}
 /* ----------------------------------------------------------------------------
     POSITION: HOUSE
 -----------------------------------------------------------------------------*/
     if (position == "wakeUp")
     {
-        Console.WriteLine("...");
-        Console.ReadLine();
-        Console.WriteLine(".........");
-        Console.ReadLine();
-        Console.WriteLine("...............");
-        Console.ReadLine();
-        Console.WriteLine(".....................");
-        Console.ReadLine();
-        Console.WriteLine("...........................");
-        Console.ReadLine();
-        Console.WriteLine("Du känner att du ligger på något mjukt och hör någon som stompar runt omkring dig. Efter några misslyckade försök lyckas du sakta öppna ögonen. ");
+        int i = 0;
+        while (i < 5)
+        {
+            Console.WriteLine("......");
+            i++;
+            Console.ReadLine();
+        }
+
+        Console.WriteLine("Du känner att du ligger på något mjukt och hör någon som stompar runt omkring dig. Efter några misslyckade försök lyckas du sakta öppna ögonen.");
         position = "leave";
-    }  
+    } 
+}
+
 /* ----------------------------------------------------------------------------
     POSITION: FIGHT
 -----------------------------------------------------------------------------*/
@@ -100,21 +99,14 @@ static void Fight()
 static void Bag()
 {
     Console.WriteLine("Ryggsäcken innehåller:");
-    // string[] items = {"Sword", "Letter"};
-    // int i = 0;
-
-    // for (int i = 0; i < items.Length; i++)
-    // {
-    //     Console.WriteLine(items[i]);
-    // }
-
-    // Lista för att utrymmet i ryggsäcken inte ska vara begränsat
-    List<string> items = new List<string>() {"Svärd" , "Banan"};
-    
-    // för att enklare kunna lägga till nya saker och så att det skrivs ut tillsammans [0], [1], [2]
-    foreach (string item in items)
+    // en array eftersom jag vill att den ska ha ett bestämt värde
+    string[] items = new string[2];
+    items[0] = "Svärd";
+    items[1] = "Banan";
+    // skriver ut varje string element
+    foreach (string i in items)
     {
-        Console.WriteLine(item);
+        Console.WriteLine(i);
     }
 }
 
