@@ -99,8 +99,8 @@ static void Fight()
 static void Bag()
 {
     Console.WriteLine("Ryggsäcken innehåller:");
-    // en array eftersom jag vill att den ska ha ett bestämt värde
-    string[] items = new string[2];
+    // en array eftersom jag vill att den ska ha ett bestämt antal platser
+    string[] items = new string[3];
     items[0] = "Svärd";
     items[1] = "Banan";
     // skriver ut varje string element
@@ -110,10 +110,22 @@ static void Bag()
     }
 }
 
-static void CheckChoice()
+static void CheckAnswer()
 {
     // while (choice != "a" || choice != "b" || choice != "c")
     // {
 
     // }
+}
+
+static string Answer() {
+    string choice = Console.ReadLine();
+    choice = choice.ToLower();
+
+    if (choice != "a" | choice != "b" | choice != "c")
+    {
+        Console.WriteLine("Du måste svara.");
+    }
+
+    return choice;
 }
