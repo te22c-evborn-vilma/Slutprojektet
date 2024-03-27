@@ -13,8 +13,6 @@ class Places
             Console.WriteLine("\na) Kolla i föremålet som ligger bredvid dig\nb) Ställ dig upp");
 
             // Bad Structure-projektet  ------------------------------------------------------
-            
-            // Answer();
             string choice = Console.ReadLine();
             choice = choice.ToLower();
             // ------------------------------------------------------------------------------
