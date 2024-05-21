@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic; //för att listor ska fungera
+// using System.Collections.Generic; //för att listor ska fungera
 using System.Security.Cryptography;
 using System.Xml.Serialization;
 /* ----------------------------------------------------------------------------
